@@ -1,6 +1,8 @@
-import sysinfo
+import platform
 
 def main():
-    output = sysinfo.get_platform_info()
-    print(output)
+    print(platform.platform())
     return
+
+if __name__ == '__main__':
+    main()
