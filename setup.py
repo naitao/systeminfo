@@ -12,8 +12,12 @@ import sys
 from setuptools import setup
 
 # Add here console scripts and other entry points in ini-style format
-entry_points = """
-[console_scripts]
+entry_points = {
+	"console_scripts":[
+		"comp30670_systeminfo = systeminfo.main:main",
+		],
+	}
+"""
 # script_name = systeminfo.module:function
 # For example:
 # fibonacci = systeminfo.skeleton:run
