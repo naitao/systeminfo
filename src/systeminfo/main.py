@@ -1,4 +1,4 @@
-import sysinfo # your own sysinfo module
+from systeminfo import sysinfo # your own sysinfo module
 
 def main():
     output = sysinfo.get_platform_info()
