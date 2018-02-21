@@ -1,8 +1,6 @@
-import platform
+import sysinfo # your own sysinfo module
 
 def main():
-    print(platform.platform())
+    output = sysinfo.get_platform_info()
+    print(output)
     return
-
-if __name__ == '__main__':
-    main()
